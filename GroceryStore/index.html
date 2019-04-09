@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col logo">
+                        <a href="#" class="logo_link">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="logo_text">
+                                        <h1>
+                                            <span class="logo_highlight">G</span>rocery
+                                            <span class="logo_highlight">S</span>hoppy
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="logo_img">
+                                    <img src="assets/images/logo2.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col user_section">
+                        <div class="user_nav">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Shop Locator</a></li>
+                                <li><a href="#"><i class="fas fa-truck"></i> Track Order</a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i> 001 234 5678</a></li>
+                                <li><a href="#"><i class="fas fa-unlock"></i> Sign In</a></li>
+                                <li><a href="#"><i class="fas fa-edit"></i> Sign Up</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col search">
+                                <form action="#">
+                                    <input type="text" placeholder="How can we help you today?">
+                                    <button type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="col cart">
+                                <button class="btn">
+                                    <i class="fas fa-cart-arrow-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="main-navigation">
+            <div class="container">
+                <div class="row justify-between">
+                    <div class="col col-1">
+                        <select>
+                            <option>All Categories</option>
+                            <option value="Kitchen">Kitchen</option>
+                            <option value="hh">Household</option>
+                            <option value="sb">Snacks & Beverages</option>
+                            <option value="">Personal Care</option>
+                            <option value="">Kitchen</option>
+                            <option value="">Household</option>
+                            <option value="">Snacks & Beverages</option>
+                            <option value="">Personal Care</option>
+                        </select>
+                    </div>
+                    <div class="col col-2">
+                        <ul class="row">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li class="dropdown"><a href="#">Kitchen</a></li>
+                            <li class="dropdown"><a href="#">Household</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li class="dropdown"><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content">
+            <div class="container">
+                <h2 class="title">
+                    Our Top Products
+                    <span class="icons">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </h2>
+                <div class="row">
+                    <div class="col col-1">
+                        <aside id="sidebar">    
+                            <div class="widgets">
+                                <div class="widget">
+                                    <h3>Search Here</h3>
+                                    <div class="form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Product Name">
+                                            <button type="submit" class="btn-1">
+                                                <i class="fas fa-angle-right"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="widget">
+                                    <h3>Price Range</h3>
+                                    <p>
+                                        <output>$541 - $1000</output>
+                                    </p>
+                                    <input type="range">
+                                </div>
+                                <div class="widget">
+                                    <h3>Food Preference</h3>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="veg">
+                                            <label for="veg">Vegetarian</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="non-veg">
+                                            <label for="non-veg">Non-Vegetarian</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget">
+                                    <h3>Discount</h3>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="discount_1">
+                                            <label for="discount_1">5% or more</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="discount_2">
+                                            <label for="discount_2">10% or more</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="discount_3">
+                                            <label for="discount_3">20% or more</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="discount_4">
+                                            <label for="discount_4">30% or more</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="discount_5">
+                                            <label for="discount_5">40% or more</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="discount_6">
+                                            <label for="discount_6">50% or more</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget">
+                                    <h3>Customer Review</h3>
+                                    <ul class="reviews">
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>5.0</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>4.0</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>3.5</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>3.0</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>2.5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col col-2">
+                        <main id="main">
+                            <section id="section_1" class="products">
+                                <h2>Nuts</h2>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="section_2" class="products">
+                                <h2>Nuts</h2>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="section_3" class="products">
+                                <h2>Nuts</h2>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="new">
+                                                <span>New</span>
+                                            </div>
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="assets/images/m1.jpg" alt="img_1">
+                                                </a>
+                                                <div class="quick_view">
+                                                    <a href="#">Quick View</a>
+                                                </div>
+                                            </div>
+                                            <div class="desc">
+                                                <p>
+                                                    Almonds 100g
+                                                </p>
+                                                <p>
+                                                    <span>$149.00</span>
+                                                    <del>$280.00</del>
+                                                </p>
+                                                <button class="btn-1">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
