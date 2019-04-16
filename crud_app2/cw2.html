@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="cw2.css">
+    <script src="js/item.js"></script>
+    <script src="js/itemOperations.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+<body>
+        
+    <div class="container">
+        <h1>CRUD Application</h1>
+        <div class="form-group">
+            <label for="">ID</label>
+            <input id="id" class="form-control" type="text" name="" id="" placeholder="ID">
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input id="name" class="form-control" type="text" placeholder="Product Name">
+        </div>
+        <div class="form-group">
+            <label for="">Price</label>
+            <input id="price" class="form-control" type="range" min="100" max="1000">
+        </div>
+        <div class="form-group">
+            <label for="">Dexcription</label>
+            <textarea id="desc" class="form-control" name="" id="" cols="20" rows="4" placeholder="Enter Description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">Color</label>
+            <input id="color" class="form-control" type="color">
+        </div>
+        <div class="form-group">
+            <label for="">URL</label>
+            <input id="url" class="form-control" type="url" placeholder="www.yahoo.com">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <button id="add" class="btn btn-primary">Add</button>
+        <button id="remove" class="btn btn-danger">Delete</button>
+        <button id="search" class="btn btn-secondary">Search</button>
+        <button class="btn btn-info">Update</button>
+        <button class="btn btn-warning">Save</button>
+        <button class="btn btn-info">Load</button>
+        <button class="btn btn-primary">Sort</button>
+        <button class="btn btn-secondary">Load from Server</button>
+        <button class="btn btn-dark">Clear All</button>
+    </div>
+    <div class="hide" id="searchbox"><input type="text" placeholder="Enter ID to search"><button class="btn btn-secondary">OK</button></div>
+    <div>
+        <h4>
+            <span id="total">Total Records</span>
+            <span id="mark">Marked Records</span>
+            <span id="unmark">Unmarked Records</span>
+        </h4>
+        <table class="table table-bordered">
+            <thead class="btn-dark">
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Description</td>
+                    <td>Color</td>
+                    <td>URL</td>
+                    <td>Operations</td>
+                </tr>
+            </thead>
+            <tbody id="items">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

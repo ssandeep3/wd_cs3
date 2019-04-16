@@ -1,0 +1,14 @@
+i{
+    padding: 5px;
+    cursor: pointer;
+}
+#searchbox{
+    border: 2px solid blue;
+    height:60px;
+    width:300px;
+    padding: 10px;
+    
+}
+.hide{
+    display: none;
+}
