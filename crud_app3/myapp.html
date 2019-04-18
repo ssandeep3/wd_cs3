@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/controller.js"></script>
+    <script src="js/itemOperations.js"></script>
+    <script src="js/items.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center btn-primary">MY CRUD APPLICATION</h1>
+        <div class="form-group">
+            <label for="">ID</label>
+            <input id="id" class="form-control" type="text">
+        </div>
+        <div class="form-group">   
+            <label for="">Name</label>
+            <input id="name" class="form-control" type="text" placeholder="Enter Product Name">
+        </div>
+        <div class="form-group">
+            <label for="">Price</label>
+            <input id="price" class="form-control" type="range" min="100" max="1000" name="price" oninput="amount.value=price.value">                                                       
+            <output id="amount" name="amount" for="price">0</output>
+        </div>
+        <div class="form-group">
+            <label for="">Description</label>
+            <textarea id="desc" class="form-control" name="" id="" cols="20" rows="5" placeholder="Enter Product Description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">Color</label>
+            <input id="color" class="form-control" type="color">
+        </div>
+        <div class="form-group">
+            <label for="">URL</label>
+            <input id="url" class="form-control" type="url" placeholder="http://www.ncuindia.edu">
+        </div>
+        <div>
+            <button id="add" class="btn btn-primary">Add</button>
+            <button id="delete" class="btn btn-danger">Delete</button>
+            <button id="search" class="btn btn-secondary">Search</button>
+            <button class="btn btn-info">Update</button>
+            <button class="btn btn-warning">Save</button>
+            <button class="btn btn-primary">Load</button>
+            <button class="btn btn-info">Sort</button>
+            <button class="btn btn-warning">Load from Server</button>
+            <button class="btn btn-dark">Clear All</button>
+        </div>
+        <div id="searchbox" class="showhide">
+            <select name="searchkey" id="searchkey">
+                <option value="id">ID</option>
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+            </select>
+            <input type="text" id="searchvalue" placeholder="Enter Search Key">
+        </div>
+        <div>
+            <h4><span id="total"></span> <span id="marked"></span> <span id="unmarked"></span></h4>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Color</th>
+                        <th>URL</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
